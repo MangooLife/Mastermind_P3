@@ -103,27 +103,4 @@ public class GameMenu {
                 start();
         }
     }
-
-    /*public void playerGuessTheSecret(){
-        generateASecret();
-        guessTheSecret();
-    }
-
-    public List<Integer> generateASecret(){
-        Random rand = new Random();
-        Integer computerSecret = 0;
-        List<Integer> secretCombinaison = new List<Integer>;
-
-        for(int i=0; i<4; i++){
-            computerSecret = rand.nextInt(9);
-            secretCombinaison.set(i, computerSecret);
-        }
-        return secretCombinaison;
-    }
-
-    public void guessTheSecret(){
-        System.out.println("Combinaison :");
-    }*/
-
-
 }
