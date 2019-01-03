@@ -1,15 +1,24 @@
-package src.com.thamarai;
+package main.java;
 
 import java.util.Scanner;
 
 public class GameMenu {
 
+    /**
+     * <b>Method void start :</b> init a game with startGame method with two int parameters : game option (1 or 2)
+     * and method option (1, 2 and 3). This two parameters are initialize with choiceAGame and choiceGameMode
+     * respectively.
+     */
     public void start() {
         int game = choiceAGame();
         int method = choiceGameMode();
         startAGame(game, method);
     }
 
+    /**
+     * <b>Method choiceAGame :</b>
+     * @return (int) game chosen by the Player (1: Recherche +/- or 2: Mastermind)
+     */
     public int choiceAGame() {
         System.out.println("Bienvenue sur Mastermind !");
         System.out.println("Choisissez un jeu :");
@@ -29,6 +38,10 @@ public class GameMenu {
         return gameChoice;
     }
 
+    /**
+     * <b>Method choiceGameMode :</b>
+     * @return (int) method chosen by the Player (1: Challenger, 2: Défenseur and 3: Duel)
+     */
     public int choiceGameMode(){
         System.out.println("Choisissez un mode de jeu :");
         System.out.println("1. Mode challenger: devinez la combinaison secrète de l'ordinateur");
@@ -48,24 +61,12 @@ public class GameMenu {
         return gameMethodChoice;
     }
 
-    public int endingMenu(){
-        System.out.println("1. Rejouer à une partie");
-        System.out.println("2. Retour au menu des jeux");
-        System.out.println("3. Quitter Mastermind");
-
-        int endingMenuChoice = 0;
-        do {
-            try {
-                Scanner scGameChoice = new Scanner(System.in);
-                endingMenuChoice = scGameChoice.nextInt();
-            } catch (Exception e) {
-                System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
-            }
-        } while (endingMenuChoice != 1 && endingMenuChoice != 2 && endingMenuChoice != 3);
-
-        return endingMenuChoice;
-    }
-
+    /**
+     *<b>Method void startGame :</b> Start the game with the type of game and the mode chosen by the player
+     * and ending with endingMenuChoice whose return a int. Then call the endingAGame method.
+     * @param gameChoice
+     * @param gameMethodChoice
+     */
     public void startAGame(int gameChoice, int gameMethodChoice){
         switch (gameChoice){
             case 1:
@@ -87,6 +88,34 @@ public class GameMenu {
         endingAGame(endingMenuChoice, gameChoice, gameMethodChoice);
     }
 
+    /**
+     * <b>Method endingMenu :</b>
+     * @return (int) ending option chosen by the Player (1: Rejouer, 2: Retour menu and 3: Quitter)
+     */
+    public int endingMenu(){
+        System.out.println("1. Rejouer à une partie");
+        System.out.println("2. Retour au menu des jeux");
+        System.out.println("3. Quitter Mastermind");
+
+        int endingMenuChoice = 0;
+        do {
+            try {
+                Scanner scGameChoice = new Scanner(System.in);
+                endingMenuChoice = scGameChoice.nextInt();
+            } catch (Exception e) {
+                System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
+            }
+        } while (endingMenuChoice != 1 && endingMenuChoice != 2 && endingMenuChoice != 3);
+
+        return endingMenuChoice;
+    }
+
+    /**
+     * <b>Method void endingAGame :</b> End the game with the ending option chosen by the player
+     * @param endingMenuChoice ending option chosen by the player
+     * @param gameChoice game chosen by the player if the player want to replay the game
+     * @param methodChoice method chosen by the player if the player want to replay the game
+     */
     public  void endingAGame(int endingMenuChoice, int gameChoice, int methodChoice){
         switch (endingMenuChoice){
             case 1:

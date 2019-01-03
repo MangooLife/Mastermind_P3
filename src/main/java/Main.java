@@ -1,4 +1,4 @@
-package src.com.thamarai;
+package main.java;
 
 public class Main {
 
