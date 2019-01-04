@@ -30,6 +30,9 @@ public class GameMenu {
             try {
                 Scanner scGameChoice = new Scanner(System.in);
                 gameChoice = scGameChoice.nextInt();
+                if(gameChoice != 1 && gameChoice != 2) {
+                    System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
+                }
             } catch (Exception e) {
                 System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
             }
@@ -53,6 +56,9 @@ public class GameMenu {
             try {
                 Scanner scGameChoice = new Scanner(System.in);
                 gameMethodChoice = scGameChoice.nextInt();
+                if(gameMethodChoice != 1 && gameMethodChoice != 2 && gameMethodChoice != 3){
+                    System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
+                }
             } catch (Exception e) {
                 System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
             }
@@ -70,12 +76,12 @@ public class GameMenu {
     public void startAGame(int gameChoice, int gameMethodChoice){
         switch (gameChoice){
             case 1:
-                System.out.println("Recherche +/-");
+                System.out.println("===== Recherche +/- =====");
                 Game searchPlusMinus = new SearchPlusMinus();
                 searchPlusMinus.startAGameByIsMethodChoice(gameMethodChoice);
                 break;
             case 2:
-                System.out.println("Mastermind");
+                System.out.println("===== Mastermind =====");
                 Game mastermind = new Mastermind();
                 mastermind.startAGameByIsMethodChoice(gameMethodChoice);
                 break;
@@ -83,7 +89,6 @@ public class GameMenu {
                 System.out.println("Entrée invalide. Retour au menu principal");
                 start();
         }
-
         int endingMenuChoice = endingMenu();
         endingAGame(endingMenuChoice, gameChoice, gameMethodChoice);
     }
@@ -102,6 +107,9 @@ public class GameMenu {
             try {
                 Scanner scGameChoice = new Scanner(System.in);
                 endingMenuChoice = scGameChoice.nextInt();
+                if(endingMenuChoice != 1 && endingMenuChoice != 2 && endingMenuChoice != 3){
+                    System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
+                }
             } catch (Exception e) {
                 System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
             }
@@ -125,7 +133,7 @@ public class GameMenu {
                 start();
                 break;
             case 3:
-                System.out.println("Bye");
+                System.out.println("Au revoir. A bientôt :) !");
                 break;
             default:
                 System.out.println("Entrée invalide ? Retour au menu principal");

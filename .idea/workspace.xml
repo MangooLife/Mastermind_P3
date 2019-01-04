@@ -7,16 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff1c383-7ab0-4d42-92d1-8b3f45192ec2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/com/thamarai/GameMenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/thamarai/GameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/thamarai/SearchPlusMinusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mastermind_P3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mastermind_P3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thamarai/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thamarai/GameMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thamarai/Mastermind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/SearchPlusMinus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thamarai/SearchPlusMinus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/PropertyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/PropertyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,27 +32,49 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Mastermind_P3" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/PropertyManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="44" column="76" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            <state relative-caret-position="1036">
+              <caret line="83" column="58" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -54,26 +82,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="368">
+              <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+        <entry file="file://$PROJECT_DIR$/test/main/java/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="137">
+              <caret line="38" column="43" selection-start-line="37" selection-start-column="7" selection-end-line="38" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SearchPlusMinus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            <state relative-caret-position="209">
+              <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,6 +146,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>computerSecre</find>
+      <find>4</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,18 +164,20 @@
         <option value="$PROJECT_DIR$/src/com/thamarai/Mastermind.java" />
         <option value="$PROJECT_DIR$/src/com/thamarai/GameMenu.java" />
         <option value="$PROJECT_DIR$/src/com/thamarai/Game.java" />
-        <option value="$PROJECT_DIR$/test/main/java/GameTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GameMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/ReadPropertyFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReadPropertyFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/PropertyManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Game.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/PropertyManager.java" />
+        <option value="$PROJECT_DIR$/test/main/java/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GameMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Game.java" />
+        <option value="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" />
       </list>
     </option>
   </component>
@@ -181,18 +230,22 @@
             <path>
               <item name="Mastermind_P3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mastermind_P3" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mastermind_P3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mastermind_P3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mastermind_P3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mastermind_P3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mastermind_P3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mastermind_P3" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mastermind_P3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -202,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546614991317" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546641498485" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -230,13 +283,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.thamarai.Main" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.Main" />
       <module name="Mastermind_P3" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -254,29 +310,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadPropertyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.ReadPropertyFile" />
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mastermind_P3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="main.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="main.java" />
+      <option name="MAIN_CLASS_NAME" value="main.java.GameTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.Given_Tab_When_ShowValueOfTab_Then_ShowTab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mastermind_P3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java" />
+      <option name="MAIN_CLASS_NAME" value="main.java.GameTest" />
+      <option name="METHOD_NAME" value="Given_Tab_When_ShowValueOfTab_Then_ShowTab" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mastermind_P3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java" />
+      <option name="MAIN_CLASS_NAME" value="main.java.SearchPlusMinusTest" />
+      <option name="METHOD_NAME" value="Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mastermind_P3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java" />
+      <option name="MAIN_CLASS_NAME" value="main.java.SearchPlusMinusTest" />
+      <option name="METHOD_NAME" value="Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.GameTest.Given_Tab_When_ShowValueOfTab_Then_ShowTab" />
+      <item itemvalue="JUnit.GameTest" />
+      <item itemvalue="JUnit.SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" />
+      <item itemvalue="JUnit.SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.ReadPropertyFile" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.ReadPropertyFile" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" />
+        <item itemvalue="JUnit.SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" />
+        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.Given_Tab_When_ShowValueOfTab_Then_ShowTab" />
       </list>
     </recent_temporary>
   </component>
@@ -293,49 +402,110 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_SuccessMessage - 2019.01.04 at 21h 46m 36s.xml">
+      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_SuccessMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_SuccessMessage - 2019.01.04 at 21h 48m 02s.xml">
+      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_SuccessMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_SuccessMessage - 2019.01.04 at 21h 48m 24s.xml">
+      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_SuccessMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_ErrorMessage - 2019.01.04 at 21h 50m 34s.xml">
+      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_ErrorMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_ErrorMessage - 2019.01.04 at 21h 50m 56s.xml">
+      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_ErrorMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_ErrorMessage - 2019.01.04 at 21h 57m 45s.xml">
+      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_ErrorMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_Tab_When_ShowValueOfTab_Then_ShowTab - 2019.01.04 at 22h 02m 09s.xml">
+      <configuration name="GameTest.Given_Tab_When_ShowValueOfTab_Then_ShowTab" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest - 2019.01.04 at 22h 03m 13s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchPlusMinusTest_Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison - 2019.01.04 at 22h 55m 06s.xml">
+      <configuration name="SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchPlusMinusTest_Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison - 2019.01.04 at 22h 57m 05s.xml">
+      <configuration name="SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2846924" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499187" visible="true" weight="0.19527897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32771084" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5007153" side_tool="true" weight="0.44216868" />
-      <window_info anchor="bottom" id="Messages" weight="0.32771084" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.500813" side_tool="true" weight="0.19527897" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.44216868" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.25903615" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" weight="0.3297568" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32771084" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" weight="0.32771084" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4985694" weight="0.32771084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/util/Preconditions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -346,15 +516,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/main/java/GameTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/.editorconfig" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadPropertyFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/out/production/Mastermind_P3/META-INF/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="300">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -363,50 +561,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReadPropertyFile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/PropertyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="163">
+          <caret line="44" column="76" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SearchPlusMinus.java">
+    <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        <state relative-caret-position="433">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Mastermind_P3/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GameMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        <state relative-caret-position="1036">
+          <caret line="83" column="58" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/PropertyManager.java">
+    <entry file="file://$PROJECT_DIR$/test/main/java/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="137">
+          <caret line="38" column="43" selection-start-line="37" selection-start-column="7" selection-end-line="38" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -415,37 +607,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="368">
+          <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SearchPlusMinus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="209">
+          <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -514,6 +689,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
