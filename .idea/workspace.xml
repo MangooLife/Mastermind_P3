@@ -7,7 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff1c383-7ab0-4d42-92d1-8b3f45192ec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/com/thamarai/GameMenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/thamarai/GameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/thamarai/SearchPlusMinusTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastermind_P3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mastermind_P3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thamarai/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thamarai/GameMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thamarai/Mastermind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/com/thamarai/SearchPlusMinus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thamarai/SearchPlusMinus.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />

@@ -1,17 +1,21 @@
 package main.java;
 
+import main.java.resources.PropertyManager;
+
 import java.util.*;
 
 public abstract class Game {
 
-    List<Integer> secretCombinaison = new ArrayList<>();
-    List<Integer> guessCombinaison = new ArrayList<>(Arrays.asList(0, 0, 0, 0));
-    List<Integer> computerSecret = generateASecret();
+    protected List<Integer> secretCombinaison = new ArrayList<Integer>();
+    protected List<Integer> guessCombinaison = new ArrayList<Integer>(Arrays.asList(0, 0, 0, 0));
+    protected List<Integer> computerSecret = generateASecret();
+    private PropertyManager propertyManager = new PropertyManager();
+    protected int nbLife = propertyManager.getNbLife();
 
 
     /**
      * <b>Method void startAGameByIsMethodChoice :</b> start a game by the player method choice
-     * @param methodChoice
+     * @param methodChoice chosen by the player
      */
     public void startAGameByIsMethodChoice(int methodChoice){
         switch (methodChoice){
@@ -72,7 +76,7 @@ public abstract class Game {
     /**
      * <b>Method haveYouWin :</b> return success message if rightNumber is equal
      * to 4 else game over for the player
-     * @param rightNumber
+     * @param rightNumber found by the player
      */
     public void haveYouWin(int rightNumber){
         if(rightNumber == 4){
