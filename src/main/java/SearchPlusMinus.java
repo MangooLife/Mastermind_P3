@@ -1,6 +1,5 @@
 package main.java;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -36,16 +35,14 @@ public class SearchPlusMinus extends Game{
     public void computerGuessTheSecret() {
         int computerFirstCombinaison[] = secretCombinaison;
         String playerResponse[];
-        String winResponseCombinaison[] = {"=","=","=","="};
         boolean computerWinGame = false;
         do{
-            rightNumber = 0;
             System.out.print("Proposition : ");
             showValueOfTab(computerFirstCombinaison);
             System.out.print(" -> Réponse : ");
             playerResponse = responseOfThePlayer();
-            if(Arrays.equals(playerResponse, winResponseCombinaison)){
-                rightNumber = nbCase;
+            String response = String.join("", playerResponse);
+            if(response.equals("====")){
                 computerWinGame = true;
                 System.out.println("win");
             } else {
@@ -54,7 +51,7 @@ public class SearchPlusMinus extends Game{
             }
             System.out.println();
         }while(nbLife > 0 && !computerWinGame);
-        haveYouWin(rightNumber);
+        haveComputerWin(computerWinGame);
     }
 
     @Override
@@ -94,13 +91,17 @@ public class SearchPlusMinus extends Game{
      */
     public int[] propositionOfTheComputer(int[] computerFirstCombinaison, String[] playerResponse){
         Random random = new Random();
+        int computerCombinaison[] = new int[nbCase];
+        int combinaison = 0;
         for(int i=0; i<nbCase; i++){
-            if(playerResponse.equals("+")){
-                Integer computerCombinaison = random.nextInt((9 + 1 - (computerFirstCombinaison[i]+1))+computerFirstCombinaison[i]+1);
-                secretCombinaison[i] = computerCombinaison;
-            } else if(playerResponse.equals("-")){
-                Integer computerCombinaison = random.nextInt((computerFirstCombinaison[i]-1));
-                secretCombinaison[i] = computerCombinaison;
+            if(playerResponse[i].equals("+")){
+                combinaison = random.nextInt(((9 - (computerFirstCombinaison[i]+1))+1)+computerFirstCombinaison[i]);
+                computerCombinaison[i] = combinaison;
+            } else if(playerResponse[i].equals("-")){
+                combinaison = random.nextInt((((computerFirstCombinaison[i]-1)-0) + 1));
+                computerCombinaison[i] = combinaison;
+            } else {
+                computerCombinaison[i] = computerFirstCombinaison[i];
             }
         }
         return computerCombinaison;

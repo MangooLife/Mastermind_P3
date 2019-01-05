@@ -83,7 +83,7 @@ public abstract class Game {
 
     /**
      * <b>Method haveYouWin :</b> return success message if rightNumber is equal
-     * to 4 else game over for the player
+     * to nbCase else game over for the player
      * @param rightNumber found by the player
      */
     public void haveYouWin(int rightNumber){
@@ -93,6 +93,20 @@ public abstract class Game {
             System.out.print("Vous avez perdu contre l'ordinateur.");
             System.out.println("Le code secret est ");
             showValueOfTab(secretCombinaison);
+            System.out.println();
+        }
+    }
+
+    /**
+     * <b>Method haveComputerWin :</b> return success message if rightNumber is equal
+     * to nbCase else game over for the computer
+     * @param winTheGame found by the computer
+     */
+    public void haveComputerWin(boolean winTheGame){
+        if(winTheGame){
+            System.out.println("L'ordinateur a gagné contre vous.");
+        } else {
+            System.out.print("L'ordinateur a perdu contre vous.");
             System.out.println();
         }
     }
