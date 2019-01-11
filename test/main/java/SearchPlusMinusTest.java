@@ -31,6 +31,17 @@ public class SearchPlusMinusTest {
     public void Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison(){
         String responseCombinaison[] = {"=", "=", "=", "+"};
         int computerCombinaison[] = {6, 0, 0, 0};
-        assertEquals(nbCase, game.propositionOfTheComputer(computerCombinaison, responseCombinaison));
+        assertEquals(nbCase, game.propositionOfTheComputer(computerCombinaison, responseCombinaison).length);
+    }
+
+    @Test
+    public void Given_Combinaison_When_PropositionOfThePlayer_Then_ReturnCombinaison(){
+        if(nbCase==4) {
+            String input = "6000";
+            InputStream in = new ByteArrayInputStream(input.getBytes());
+            System.setIn(in);
+            int tableauEntier[] = {6, 0, 0, 0};
+            assertArrayEquals(tableauEntier, game.propositionOfThePlayer());
+        }
     }
 }

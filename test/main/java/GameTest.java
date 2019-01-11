@@ -3,12 +3,11 @@ package main.java;
 import main.java.resources.PropertyManager;
 import org.junit.jupiter.api.Test;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 import java.io.PrintStream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class GameTest {
     private PropertyManager propertyManager = new PropertyManager();
@@ -37,17 +36,6 @@ public class GameTest {
     public void Given_SecretCombinaison_When_GenerateASecret_Then_ReturnSecretCombinaison(){
        int[] secret = game.generateASecret();
        assertEquals(nbCase, secret.length);
-    }
-
-    @Test
-    public void Given_Combinaison_When_PropositionOfThePlayer_Then_ReturnCombinaison(){
-        if(nbCase==4) {
-            String input = "6000";
-            InputStream in = new ByteArrayInputStream(input.getBytes());
-            System.setIn(in);
-            int tableauEntier[] = {6, 0, 0, 0};
-            assertArrayEquals(tableauEntier, game.propositionOfThePlayer());
-        }
     }
 
     @Test

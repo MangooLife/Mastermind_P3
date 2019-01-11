@@ -55,33 +55,6 @@ public abstract class Game {
     }
 
     /**
-     * <b>Method propositionOfThePlayer :</b> Player guess the secret code
-     * @return guessCombinaison : code guessed by the player
-     */
-    public int[] propositionOfThePlayer(){
-        System.out.print("Veuillez taper une suite de "+nbCase+" chiffres entre 0 et 9: ");
-        String number = "";
-        do{
-            try{
-                Scanner scProposition = new Scanner(System.in);
-                number = scProposition.nextLine();
-                if(number.length() != nbCase){
-                    System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
-                }
-            } catch(Exception e){
-                System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
-            }
-        }while(number.length()!=nbCase);
-
-        for(int i=0; i<number.length(); i++){
-            guessCombinaison[i] = Integer.valueOf(String.valueOf(number.charAt(i)));
-        }
-        System.out.print("Proposition : ");
-        showValueOfTab(guessCombinaison);
-        return guessCombinaison;
-    }
-
-    /**
      * <b>Method haveYouWin :</b> return success message if rightNumber is equal
      * to nbCase else game over for the player
      * @param rightNumber found by the player
@@ -123,7 +96,7 @@ public abstract class Game {
     }
 
     /**
-     * <b>Method showValueOfTab :</b> Show a tab combinaison
+     * <b>Method showValueOfTab :</b> Show a Array combinaison
      * @param tab
      */
     public void showValueOfTab(int[] tab){

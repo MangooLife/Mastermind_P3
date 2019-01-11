@@ -4,6 +4,7 @@ public class Mastermind extends Game{
 
     @Override
     public void playerGuessTheSecret() {
+        System.out.println("Hello");
     }
 
     @Override

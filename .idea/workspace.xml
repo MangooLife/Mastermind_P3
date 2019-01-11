@@ -9,7 +9,10 @@
     <list default="true" id="eff1c383-7ab0-4d42-92d1-8b3f45192ec2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mastermind.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -48,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/PropertyManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="167">
               <caret line="44" column="76" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -60,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1036">
-              <caret line="83" column="58" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
+            <state relative-caret-position="-120">
+              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -69,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="104" column="31" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="31" />
+            <state relative-caret-position="559">
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -78,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/main/java/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="121">
+              <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SearchPlusMinus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="262">
+              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,11 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-12">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -114,8 +114,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#112#113#0" expanded="true" />
+                <element signature="e#140#141#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,8 +136,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>computerSecre</find>
       <find>4</find>
+      <find>computerSecre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,10 +164,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/resources/PropertyManager.java" />
-        <option value="$PROJECT_DIR$/test/main/java/GameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameMenu.java" />
-        <option value="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Mastermind.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game.java" />
+        <option value="$PROJECT_DIR$/test/main/java/GameTest.java" />
+        <option value="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" />
       </list>
     </option>
@@ -196,7 +201,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -222,6 +227,12 @@
             <path>
               <item name="Mastermind_P3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mastermind_P3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mastermind_P3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mastermind_P3" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,7 +253,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546675145919" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547225860067" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -311,7 +322,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.Given_Tab_When_ShowValueOfTab_Then_ShowTab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchPlusMinusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mastermind_P3" />
       <extension name="coverage">
         <pattern>
@@ -320,9 +331,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main.java" />
-      <option name="MAIN_CLASS_NAME" value="main.java.GameTest" />
-      <option name="METHOD_NAME" value="Given_Tab_When_ShowValueOfTab_Then_ShowTab" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="main.java.SearchPlusMinusTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -360,19 +369,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GameTest.Given_Tab_When_ShowValueOfTab_Then_ShowTab" />
       <item itemvalue="JUnit.GameTest" />
       <item itemvalue="JUnit.SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" />
       <item itemvalue="JUnit.SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.SearchPlusMinusTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" />
+        <item itemvalue="JUnit.SearchPlusMinusTest" />
         <item itemvalue="JUnit.SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" />
         <item itemvalue="JUnit.GameTest" />
-        <item itemvalue="JUnit.GameTest.Given_Tab_When_ShowValueOfTab_Then_ShowTab" />
       </list>
     </recent_temporary>
   </component>
@@ -390,12 +399,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_SuccessMessage - 2019.01.04 at 21h 46m 36s.xml">
-      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_SuccessMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_SuccessMessage - 2019.01.04 at 21h 48m 02s.xml">
-      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_SuccessMessage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_SuccessMessage - 2019.01.04 at 21h 48m 24s.xml">
       <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_SuccessMessage" configurationId="JUnit" />
     </history-entry>
@@ -420,6 +423,12 @@
     <history-entry file="SearchPlusMinusTest_Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison - 2019.01.04 at 22h 57m 05s.xml">
       <configuration name="SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SearchPlusMinusTest - 2019.01.11 at 16h 39m 23s.xml">
+      <configuration name="SearchPlusMinusTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchPlusMinusTest_Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison - 2019.01.11 at 16h 42m 57s.xml">
+      <configuration name="SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,8 +440,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499187" visible="true" weight="0.19527897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -443,12 +451,12 @@
       <window_info id="Favorites" order="6" sideWeight="0.500813" side_tool="true" weight="0.19527897" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.25903615" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.23855421" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32771084" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26930693" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" weight="0.32771084" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4985694" weight="0.32771084" />
@@ -527,58 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/PropertyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="44" column="76" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="83" column="58" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -589,27 +549,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/main/java/GameTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#112#113#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/PropertyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="44" column="76" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="104" column="31" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="31" />
+        <state relative-caret-position="559">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main/java/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SearchPlusMinus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="262">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
