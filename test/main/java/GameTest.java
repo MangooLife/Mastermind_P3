@@ -46,10 +46,24 @@ public class GameTest {
     }
 
     @Test
-    public void Given_RightNumber_When_HaveYouWin_Then_ErrorMessage(){
+    public void Given_WrongNumber_When_HaveYouWin_Then_ErrorMessage(){
         System.setOut(new PrintStream(outContent));
         game.haveYouWin(nbCase+1);
         assertNotEquals("Vous avez perdu contre l'ordinateur. Le code secret est \n 0000\n", outContent.toString());
+    }
+
+    @Test
+    public void Given_RightNumber_When_HaveComputerWin_Then_SuccessMessage(){
+        System.setOut(new PrintStream(outContent));
+        game.haveComputerWin(true);
+        assertEquals("L'ordinateur a gagné contre vous.\n", outContent.toString());
+    }
+
+    @Test
+    public void Given_WrongNumber_When_HaveComputerWin_Then_ErrorMessage(){
+        System.setOut(new PrintStream(outContent));
+        game.haveComputerWin(false);
+        assertNotEquals("L'ordinateur a perdu contre vous.\n \n", outContent.toString());
     }
 
     @Test

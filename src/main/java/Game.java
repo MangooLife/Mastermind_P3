@@ -48,7 +48,7 @@ public abstract class Game {
     public int[] generateASecret(){
         Random random = new Random();
         for(int i=0; i<nbCase; i++){
-            Integer computerSecret = random.nextInt(9);
+            Integer computerSecret = random.nextInt(10);
             secretCombinaison[i] = computerSecret;
         }
         return secretCombinaison;

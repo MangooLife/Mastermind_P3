@@ -7,10 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff1c383-7ab0-4d42-92d1-8b3f45192ec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/main/java/MastermindTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mastermind.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/main/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" afterDir="false" />
     </list>
@@ -33,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -63,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="150">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -72,29 +75,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="681">
+              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/main/java/GameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SearchPlusMinus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="1343">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,21 +96,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="179">
+              <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1900#1909#0" expanded="true" />
+                <element signature="e#6112#6121#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
+        <entry file="file://$PROJECT_DIR$/test/main/java/MastermindTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#112#113#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -137,7 +141,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>4</find>
+      <find>getN</find>
       <find>computerSecre</find>
+      <find>shuffleAr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,15 +167,15 @@
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/resources/PropertyManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Mastermind.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Game.java" />
-        <option value="$PROJECT_DIR$/test/main/java/GameTest.java" />
         <option value="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" />
+        <option value="$PROJECT_DIR$/test/main/java/GameTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Mastermind.java" />
       </list>
     </option>
   </component>
@@ -227,12 +233,6 @@
             <path>
               <item name="Mastermind_P3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mastermind_P3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mastermind_P3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mastermind_P3" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,7 +253,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547225860067" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548494669241" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -308,7 +308,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.Given_RightNumber_When_HaveComputerWin_Then_SuccessMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mastermind_P3" />
       <extension name="coverage">
         <pattern>
@@ -318,41 +318,45 @@
       </extension>
       <option name="PACKAGE_NAME" value="main.java" />
       <option name="MAIN_CLASS_NAME" value="main.java.GameTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchPlusMinusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mastermind_P3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main.java" />
-      <option name="MAIN_CLASS_NAME" value="main.java.SearchPlusMinusTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mastermind_P3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main.java" />
-      <option name="MAIN_CLASS_NAME" value="main.java.SearchPlusMinusTest" />
-      <option name="METHOD_NAME" value="Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" />
+      <option name="METHOD_NAME" value="Given_RightNumber_When_HaveComputerWin_Then_SuccessMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.Given_WrongNumber_When_HaveComputerWin_Then_ErrorMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mastermind_P3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java" />
+      <option name="MAIN_CLASS_NAME" value="main.java.GameTest" />
+      <option name="METHOD_NAME" value="Given_WrongNumber_When_HaveComputerWin_Then_ErrorMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.Given_WrongNumber_When_HaveYouWin_Then_ErrorMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mastermind_P3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java" />
+      <option name="MAIN_CLASS_NAME" value="main.java.GameTest" />
+      <option name="METHOD_NAME" value="Given_WrongNumber_When_HaveYouWin_Then_ErrorMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPlusMinusTest.Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mastermind_P3" />
       <extension name="coverage">
         <pattern>
@@ -362,26 +366,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="main.java" />
       <option name="MAIN_CLASS_NAME" value="main.java.SearchPlusMinusTest" />
-      <option name="METHOD_NAME" value="Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" />
+      <option name="METHOD_NAME" value="Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GameTest" />
-      <item itemvalue="JUnit.SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" />
-      <item itemvalue="JUnit.SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" />
+      <item itemvalue="JUnit.SearchPlusMinusTest.Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase" />
+      <item itemvalue="JUnit.GameTest.Given_RightNumber_When_HaveComputerWin_Then_SuccessMessage" />
+      <item itemvalue="JUnit.GameTest.Given_WrongNumber_When_HaveComputerWin_Then_ErrorMessage" />
+      <item itemvalue="JUnit.GameTest.Given_WrongNumber_When_HaveYouWin_Then_ErrorMessage" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.SearchPlusMinusTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" />
-        <item itemvalue="JUnit.SearchPlusMinusTest" />
-        <item itemvalue="JUnit.SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" />
-        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.Given_WrongNumber_When_HaveYouWin_Then_ErrorMessage" />
+        <item itemvalue="JUnit.GameTest.Given_WrongNumber_When_HaveComputerWin_Then_ErrorMessage" />
+        <item itemvalue="JUnit.GameTest.Given_RightNumber_When_HaveComputerWin_Then_SuccessMessage" />
+        <item itemvalue="JUnit.SearchPlusMinusTest.Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase" />
       </list>
     </recent_temporary>
   </component>
@@ -399,35 +403,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_SuccessMessage - 2019.01.04 at 21h 48m 24s.xml">
-      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_SuccessMessage" configurationId="JUnit" />
+    <history-entry file="SearchPlusMinusTest_Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase - 2019.01.11 at 18h 38m 31s.xml">
+      <configuration name="SearchPlusMinusTest.Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_ErrorMessage - 2019.01.04 at 21h 50m 34s.xml">
-      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_ErrorMessage" configurationId="JUnit" />
+    <history-entry file="SearchPlusMinusTest_Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase - 2019.01.11 at 18h 38m 47s.xml">
+      <configuration name="SearchPlusMinusTest.Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_ErrorMessage - 2019.01.04 at 21h 50m 56s.xml">
-      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_ErrorMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_Given_RightNumber_When_HaveYouWin_Then_ErrorMessage - 2019.01.04 at 21h 57m 45s.xml">
-      <configuration name="GameTest.Given_RightNumber_When_HaveYouWin_Then_ErrorMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_Given_Tab_When_ShowValueOfTab_Then_ShowTab - 2019.01.04 at 22h 02m 09s.xml">
-      <configuration name="GameTest.Given_Tab_When_ShowValueOfTab_Then_ShowTab" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2019.01.04 at 22h 03m 13s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SearchPlusMinusTest_Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison - 2019.01.04 at 22h 55m 06s.xml">
+    <history-entry file="SearchPlusMinusTest_Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison - 2019.01.11 at 18h 43m 51s.xml">
       <configuration name="SearchPlusMinusTest.Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SearchPlusMinusTest_Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison - 2019.01.04 at 22h 57m 05s.xml">
-      <configuration name="SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" configurationId="JUnit" />
+    <history-entry file="SearchPlusMinusTest_Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase - 2019.01.11 at 18h 44m 36s.xml">
+      <configuration name="SearchPlusMinusTest.Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SearchPlusMinusTest - 2019.01.11 at 16h 39m 23s.xml">
-      <configuration name="SearchPlusMinusTest" configurationId="JUnit" />
+    <history-entry file="SearchPlusMinusTest_Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase - 2019.01.11 at 18h 44m 52s.xml">
+      <configuration name="SearchPlusMinusTest.Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SearchPlusMinusTest_Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison - 2019.01.11 at 16h 42m 57s.xml">
-      <configuration name="SearchPlusMinusTest.Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison" configurationId="JUnit" />
+    <history-entry file="SearchPlusMinusTest_Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase - 2019.01.11 at 18h 45m 28s.xml">
+      <configuration name="SearchPlusMinusTest.Given_NbEqual_When_OnlyNbCaseEqual_Then_NbEqualByNbCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_RightNumber_When_HaveComputerWin_Then_SuccessMessage - 2019.01.11 at 19h 03m 18s.xml">
+      <configuration name="GameTest.Given_RightNumber_When_HaveComputerWin_Then_SuccessMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_WrongNumber_When_HaveComputerWin_Then_ErrorMessage - 2019.01.11 at 19h 03m 26s.xml">
+      <configuration name="GameTest.Given_WrongNumber_When_HaveComputerWin_Then_ErrorMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_WrongNumber_When_HaveComputerWin_Then_ErrorMessage - 2019.01.11 at 19h 04m 11s.xml">
+      <configuration name="GameTest.Given_WrongNumber_When_HaveComputerWin_Then_ErrorMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_WrongNumber_When_HaveYouWin_Then_ErrorMessage - 2019.01.11 at 19h 04m 20s.xml">
+      <configuration name="GameTest.Given_WrongNumber_When_HaveYouWin_Then_ErrorMessage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -441,23 +445,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499187" visible="true" weight="0.19527897" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49841774" weight="0.19527897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.500813" side_tool="true" weight="0.19527897" />
+      <window_info id="Favorites" order="6" sideWeight="0.50158226" side_tool="true" weight="0.19527897" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.23855421" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.32650602" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26930693" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" weight="0.32771084" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2686747" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5028612" side_tool="true" weight="0.28313252" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4985694" weight="0.32771084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -469,6 +474,34 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49841774" visible="true" weight="0.19527897" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50158226" side_tool="true" weight="0.19527897" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785408" visible="true" weight="0.43012047" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2686747" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50214595" side_tool="true" weight="0.23855421" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4985694" weight="0.32771084" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -535,28 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/net/SocketInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -570,10 +585,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameMenu.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="195">
+          <caret line="1539" selection-start-line="1539" selection-end-line="1539" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="565" selection-start-line="565" selection-end-line="565" />
         </state>
       </provider>
     </entry>
@@ -584,31 +606,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/main/java/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        <state relative-caret-position="390">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -617,10 +649,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SearchPlusMinus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        <state relative-caret-position="1343">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main/java/MastermindTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1900#1909#0" expanded="true" />
+            <element signature="e#6112#6121#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SearchPlusMinusTest {
     SearchPlusMinus game = new SearchPlusMinus();
     private PropertyManager propertyManager = new PropertyManager();
-    protected int nbCase = propertyManager.getNbCase();
+    private int nbCase = propertyManager.getNbCase();
     final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Test

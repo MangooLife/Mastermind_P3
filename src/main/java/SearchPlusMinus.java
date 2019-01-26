@@ -4,7 +4,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class SearchPlusMinus extends Game{
-
     private int computerCombinaison[] = new int[nbCase];
     private String responseCombinaison[] = new String[nbCase];
     private int computerFirstCombinaison[] = secretCombinaison;
@@ -13,7 +12,6 @@ public class SearchPlusMinus extends Game{
 
     @Override
     public void playerGuessTheSecret() {
-        isDeveloperMode();
         do{
             displayPlayerGuessTheSecret();
         }while(nbLife > 0 && rightNumber != nbCase);
@@ -22,9 +20,6 @@ public class SearchPlusMinus extends Game{
 
     @Override
     public void computerGuessTheSecret() {
-        int computerFirstCombinaison[] = secretCombinaison;
-        String playerResponse[];
-        boolean computerWinGame = false;
         do{
             displayComputerGuessTheSecret();
         }while(nbLife > 0 && !computerWinGame);
@@ -80,9 +75,8 @@ public class SearchPlusMinus extends Game{
         System.out.print(" -> Réponse : ");
         playerResponse = responseOfThePlayer();
         String response = String.join("", playerResponse);
-        if(response.equals("====")){ //nbCase à revoir
+        if(response.equals(onlyNbCaseEqual())){
             computerWinGame = true;
-            System.out.println("win");
         } else {
             computerFirstCombinaison = propositionOfTheComputer(computerFirstCombinaison, playerResponse);
             nbLife--;
@@ -151,17 +145,25 @@ public class SearchPlusMinus extends Game{
         Random random = new Random();
         int computerCombinaison[] = new int[nbCase];
         int combinaison = 0;
-        for(int i=0; i<nbCase; i++){ // a revoir
+        for(int i=0; i<nbCase; i++){
             if(playerResponse[i].equals("+")){
-                combinaison = random.nextInt(((9 - (computerFirstCombinaison[i]+1))+1)+computerFirstCombinaison[i]);
+                combinaison = random.nextInt(((9 + 1 - (computerFirstCombinaison[i]+1))+(computerFirstCombinaison[i]+1)));
                 computerCombinaison[i] = combinaison;
             } else if(playerResponse[i].equals("-")){
-                combinaison = random.nextInt((((computerFirstCombinaison[i]-1)-0) + 1));
+                combinaison = random.nextInt((computerFirstCombinaison[i]-1));
                 computerCombinaison[i] = combinaison;
             } else {
                 computerCombinaison[i] = computerFirstCombinaison[i];
             }
         }
         return computerCombinaison;
+    }
+
+    public String onlyNbCaseEqual(){
+        String nbCaseEqual = "";
+        for(int i = 0; i < nbCase; i++){
+            nbCaseEqual += "=";
+        }
+        return nbCaseEqual;
     }
 }
