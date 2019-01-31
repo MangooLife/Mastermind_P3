@@ -12,6 +12,7 @@ public abstract class Game {
     protected int isDeveloperMode = propertyManager.getIsDeveloperMode();
     protected int nbCase = propertyManager.getNbCase();
     protected int secretCombinaison[] = new int[nbCase];
+    protected int firstCombinaison[] = new int [nbCase];
     protected int guessCombinaison[] = new int[nbCase];
     protected int computerSecret[] = generateASecret();
     protected int rightNumber;
@@ -52,6 +53,17 @@ public abstract class Game {
             secretCombinaison[i] = computerSecret;
         }
         return secretCombinaison;
+    }
+
+    /**
+     * <b>Method generateACombi :</b> return a first combin for computer
+     * @return (list[Integer]) firstCombinaison
+     */
+    public int[] generateACombi(){
+        for(int i=0; i<nbCase; i++){
+            firstCombinaison[i] = 0;
+        }
+        return firstCombinaison;
     }
 
     /**

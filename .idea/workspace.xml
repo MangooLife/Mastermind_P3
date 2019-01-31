@@ -7,15 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eff1c383-7ab0-4d42-92d1-8b3f45192ec2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/main/java/MastermindTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mastermind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/main/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+            <state relative-caret-position="333">
+              <caret line="61" column="31" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -108,12 +102,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+            <state relative-caret-position="172">
+              <caret line="192" column="13" lean-forward="true" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1900#1909#0" expanded="true" />
+                <element signature="e#1864#1873#0" expanded="true" />
                 <element signature="e#6112#6121#0" expanded="true" />
+                <element signature="e#6342#6351#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,9 +167,9 @@
         <option value="$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java" />
         <option value="$PROJECT_DIR$/test/main/java/GameTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/SearchPlusMinus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mastermind.java" />
       </list>
     </option>
@@ -253,7 +248,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548494669241" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548973171604" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -456,13 +451,13 @@
       <window_info id="Favorites" order="6" sideWeight="0.50158226" side_tool="true" weight="0.19527897" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.32650602" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49570817" visible="true" weight="0.5060241" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2686747" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5028612" side_tool="true" weight="0.28313252" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50429183" side_tool="true" visible="true" weight="0.5060241" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4985694" weight="0.32771084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -637,13 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
+    <entry file="file://$PROJECT_DIR$/test/main/java/MastermindTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -657,28 +649,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
+    <entry file="file://$PROJECT_DIR$/test/main/java/SearchPlusMinusTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+        <state relative-caret-position="179">
+          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/main/java/MastermindTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="333">
+          <caret line="61" column="31" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mastermind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+        <state relative-caret-position="172">
+          <caret line="192" column="13" lean-forward="true" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1900#1909#0" expanded="true" />
+            <element signature="e#1864#1873#0" expanded="true" />
             <element signature="e#6112#6121#0" expanded="true" />
+            <element signature="e#6342#6351#0" expanded="true" />
           </folding>
         </state>
       </provider>

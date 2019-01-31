@@ -4,10 +4,9 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Mastermind extends Game{
-    private int computerCombinaison[] = new int[nbCase];
     private String responseCombinaison[] = new String[nbCase];
     private int playerResponse;
-    private int computerFirstCombinaison[] = secretCombinaison;
+    private int computerCombinaison[] = generateACombi();
     private int nbGoodNumber;
     private int nbGoodCase;
     private boolean computerWinGame = false;
@@ -50,24 +49,23 @@ public class Mastermind extends Game{
      * <b>Method displayPlayerGuessTheSecret :</b> display the game playerGuessTheSecret
      */
     public void displayPlayerGuessTheSecret(){
-        isDeveloperMode();
-        propositionOfThePlayer();
+        isDeveloperMode(); propositionOfThePlayer();
         nbGoodNumber = 0; nbGoodCase = 0 ;
-        List<Integer> noTwice = new ArrayList<Integer>();
+        List<Integer> noDouble = new ArrayList<Integer>();
         System.out.print(" -> Réponse : ");
         for(int i = 0; i < nbCase; i++) {
             if (guessCombinaison[i] == computerSecret[i]) {
                 nbGoodCase++;
-                noTwice.add(guessCombinaison[i]);
-            } else {
-                for (int j = 0; j < nbCase && !noTwice.contains(guessCombinaison[i]); j++) {
-                    if (guessCombinaison[i] == computerSecret[j]) {
-                        if (i != j) {
-                            nbGoodNumber++;
-                        }
-                    }
+                noDouble.add(guessCombinaison[i]);
+                guessCombinaison[i] = -1;
+            }
+        }
+        for(int i = 0; i < nbCase; i++){
+            for (int j = 0; j < nbCase && !noDouble.contains(guessCombinaison[i]) && guessCombinaison[i] != -1; j++) {
+                if (guessCombinaison[i] == computerSecret[j]) {
+                    nbGoodNumber++;
+                    guessCombinaison[i] = -1;
                 }
-                noTwice.add(guessCombinaison[i]);
             }
         }
         System.out.println(nbGoodNumber+" présent, "+ nbGoodCase +" bien placé");
@@ -106,7 +104,7 @@ public class Mastermind extends Game{
      */
     public void displayComputerGuessTheSecret(){
         System.out.print("Proposition : ");
-        showValueOfTab(computerFirstCombinaison);
+        showValueOfTab(computerCombinaison);
         System.out.print(" -> Réponse : ");
         nbGoodCase = responseOfThePlayerAskGoodCase();
         nbGoodNumber = responseOfThePlayerAskGoodNumber();
@@ -115,7 +113,7 @@ public class Mastermind extends Game{
             computerWinGame = true;
             System.out.println("win");
         } else {
-            computerFirstCombinaison = propositionOfTheComputer(computerFirstCombinaison, nbGoodCase, nbGoodNumber);
+            computerCombinaison = propositionOfTheComputer(computerCombinaison, nbGoodCase, nbGoodNumber);
             nbLife--;
         }
     }
@@ -166,78 +164,70 @@ public class Mastermind extends Game{
 
     private List<Integer> numbersWhoseNotInTheCombinaison = new ArrayList<Integer>();
     private int lastCombinaison[] = new int[nbCase];
-    private int previousNbGoodCase = 0; private int previousNbGoodNumber = 0;
+    private List<int[]> game = new ArrayList<int[]>();
+    private int combinaison = 0;
+    private int previousNbGoodCase, previousNbGoodNumber = 0;
+    private List<Integer> winCombinaison = new ArrayList<Integer>();
+
 
     /**
      * <b>Method propositionOfTheComputer :</b>
-     * @param computerFirstCombinaison
+     * @param computerCombinaison
      * @param nbGoodCase
      * @param nbGoodNumber
      * @return list computer combinaison
      */
-    public int[] propositionOfTheComputer(int computerFirstCombinaison[], int nbGoodCase, int nbGoodNumber){
+    public int[] propositionOfTheComputer(int computerCombinaison[], int nbGoodCase, int nbGoodNumber) {
         Random random = new Random();
-        int computerCombinaison[] = new int[nbCase];
         int combinaison = 0;
-        System.out.println(numbersWhoseNotInTheCombinaison);
-        System.out.println(previousNbGoodCase);
-        System.out.println(previousNbGoodNumber);
+        int[] newCombinaison = new int[nbCase];
 
-        if(nbGoodNumber == 0 && nbGoodCase == 0){
-            for (int i = 0; i < nbCase; i++){
-                numbersWhoseNotInTheCombinaison.add(computerFirstCombinaison[i]);
-                do{
-                    combinaison = random.nextInt(9 + 1);
-                }while(numbersWhoseNotInTheCombinaison.contains(combinaison));
-                computerCombinaison[i] = combinaison;
-                System.out.println(numbersWhoseNotInTheCombinaison);
+        if(winCombinaison.size() == nbCase || nbGoodNumber == nbCase){
+            for(int i = 0; i < nbCase; i++){
+                lastCombinaison[i] = winCombinaison.get(i);
             }
-            if(numbersWhoseNotInTheCombinaison.size() >= 9){
+            shuffleArray(lastCombinaison);
+            for (int i = 0; i < nbCase; i++) {
+                newCombinaison[i] = lastCombinaison[i];
+                winCombinaison.add(lastCombinaison[i]);
+            }
+        } else if (nbGoodCase > 0){
+            for(int i = 0; i<nbGoodCase; i++){
+                winCombinaison.add(computerCombinaison[i]);
+                System.out.println(winCombinaison);
+            }
+            for (int i = 0; i < nbCase; i++) {
+                numbersWhoseNotInTheCombinaison.add(computerCombinaison[i]);
+                do {
+                    combinaison = computerCombinaison[i] + 1;
+                } while (numbersWhoseNotInTheCombinaison.contains(combinaison));
+                if(combinaison < 10) {
+                    newCombinaison[i] = combinaison;
+                } else {
+                    newCombinaison[i] = 0;
+                }
+            }
+            if (numbersWhoseNotInTheCombinaison.size() >= 9) {
                 numbersWhoseNotInTheCombinaison.clear();
             }
-        } else if (nbGoodNumber == nbCase){
-            shuffleArray(computerFirstCombinaison);
-            for(int i = 0; i < nbCase; i++){
-                computerCombinaison[i] = computerFirstCombinaison[i];
-            }
-        } else if (nbGoodNumber >= 0){
-            if(nbGoodNumber > previousNbGoodNumber){
-                do{
-                    combinaison = computerFirstCombinaison[0]++;
-                }while(numbersWhoseNotInTheCombinaison.contains(combinaison));
-                computerCombinaison[0] = combinaison;
-                lastCombinaison[0] = computerFirstCombinaison[0];
-                for(int i = 1; i < nbCase-1; i++){
-                    if(numbersWhoseNotInTheCombinaison.contains(computerFirstCombinaison[i])){
-                        do{
-                            combinaison = random.nextInt(9 + 1);
-                        }while(numbersWhoseNotInTheCombinaison.contains(combinaison));
-                        computerCombinaison[i] = combinaison;
-                    } else {
-                        lastCombinaison[i] = computerFirstCombinaison[i];
-                        computerCombinaison[i] = computerFirstCombinaison[i];
-                    }
+        } else if (nbGoodNumber == 0 && nbGoodCase == 0 || nbGoodNumber == previousNbGoodNumber) {
+            for (int i = 0; i < nbCase; i++) {
+                numbersWhoseNotInTheCombinaison.add(computerCombinaison[i]);
+                do {
+                    combinaison = computerCombinaison[i] + 1;
+                } while (numbersWhoseNotInTheCombinaison.contains(combinaison));
+                if(combinaison < 10) {
+                    newCombinaison[i] = combinaison;
+                } else {
+                    newCombinaison[i] = 0;
                 }
-            }  else {
-                for(int i = 0; i < nbCase; i++){
-                    computerCombinaison[i] = computerFirstCombinaison[i];
-                 }
+
+            }
+            if (numbersWhoseNotInTheCombinaison.size() >= 9) {
+                numbersWhoseNotInTheCombinaison.clear();
             }
         }
-
-        //manage the number of wrong number
-        if(numbersWhoseNotInTheCombinaison.size() < 10){
-            Set<Integer> set = new HashSet<>(numbersWhoseNotInTheCombinaison);
-            numbersWhoseNotInTheCombinaison.clear();
-            numbersWhoseNotInTheCombinaison.addAll(set);
-        } else {
-            numbersWhoseNotInTheCombinaison.clear();
-        }
-
-        //save previous number of good case and good number
-        previousNbGoodCase = nbGoodCase;
-        previousNbGoodNumber = nbGoodNumber;
-        return computerCombinaison;
+        return newCombinaison;
     }
 
     static void shuffleArray(int[] ar)
