@@ -39,6 +39,7 @@ public class SearchPlusMinus extends Game{
                 System.out.println("L'ordinateur devine la combinaison du joueur : ");
                 displayComputerGuessTheSecret();
             }
+            nbLifeCvsP--;
         }while((nbLifeCvsP) > 0 && !computerWinGame && rightNumber != nbCase);
         haveComputerWin(computerWinGame);
         haveYouWin(rightNumber);

@@ -7,8 +7,8 @@ public class Mastermind extends Game{
     private String responseCombinaison[] = new String[nbCase];
     private int playerResponse;
     private int computerCombinaison[] = generateACombi();
-    private int nbGoodNumber;
-    private int nbGoodCase;
+    private int nbGoodNumber, nbGoodCase;
+    private int nbGoodNumberComputer, nbGoodCaseComputer;
     private boolean computerWinGame = false;
 
     @Override
@@ -35,14 +35,15 @@ public class Mastermind extends Game{
                 System.out.println("Joueur devine la combinaison de l'ordinateur : ");
                 displayPlayerGuessTheSecret();
             }
-            System.out.println();
-            if(rightNumber != nbCase){
+            System.out.println(computerWinGame + " " + nbGoodCase);
+            if(nbGoodCase != nbCase){
                 System.out.println("L'ordinateur devine la combinaison du joueur : ");
                 displayComputerGuessTheSecret();
             }
-        }while((nbLifeCvsP) > 0 && !computerWinGame && rightNumber != nbCase);
+            nbLifeCvsP--;
+        }while((nbLifeCvsP) > 0 && !computerWinGame && nbGoodCase != nbCase);
         haveComputerWin(computerWinGame);
-        haveYouWin(rightNumber);
+        haveYouWin(nbGoodCase);
     }
 
     /**
@@ -106,14 +107,14 @@ public class Mastermind extends Game{
         System.out.print("Proposition : ");
         showValueOfTab(computerCombinaison);
         System.out.print(" -> Réponse : ");
-        nbGoodCase = responseOfThePlayerAskGoodCase();
-        nbGoodNumber = responseOfThePlayerAskGoodNumber();
-        System.out.println(nbGoodNumber+" présent, "+ nbGoodCase +" bien placé");
-        if(nbGoodCase == nbCase){
+        nbGoodCaseComputer = responseOfThePlayerAskGoodCase();
+        nbGoodNumberComputer = responseOfThePlayerAskGoodNumber();
+        System.out.println(nbGoodNumberComputer+" présent, "+ nbGoodCaseComputer +" bien placé");
+        if(nbGoodCaseComputer == nbCase){
             computerWinGame = true;
             System.out.println("win");
         } else {
-            computerCombinaison = propositionOfTheComputer(computerCombinaison, nbGoodCase, nbGoodNumber);
+            computerCombinaison = propositionOfTheComputer(computerCombinaison, nbGoodCaseComputer, nbGoodNumberComputer);
             nbLife--;
         }
     }
@@ -124,19 +125,19 @@ public class Mastermind extends Game{
      */
     public int responseOfThePlayerAskGoodCase() {
         System.out.print("Combien de chiffre bien placés ? ");
-        nbGoodCase = 0;
+        nbGoodCaseComputer = 0;
         do {
             try {
                 Scanner scProposition = new Scanner(System.in);
-                nbGoodCase = scProposition.nextInt();
-                if (nbGoodCase < 0 && nbGoodCase > nbCase) {
+                nbGoodCaseComputer = scProposition.nextInt();
+                if (nbGoodCaseComputer < 0 && nbGoodCaseComputer > nbCase) {
                     System.out.println("Veuillez fournir le nombre de case correcte");
                 }
             } catch (Exception e) {
                 System.out.println("Veuillez fournir le nombre de case correcte");
             }
-        } while (nbGoodCase < 0 && nbGoodCase > nbCase);
-        return nbGoodCase;
+        } while (nbGoodCaseComputer < 0 && nbGoodCaseComputer > nbCase);
+        return nbGoodCaseComputer;
     }
 
     /**
@@ -149,16 +150,16 @@ public class Mastermind extends Game{
         do{
             try{
                 Scanner scProposition = new Scanner(System.in);
-                nbGoodNumber = scProposition.nextInt();
-                if(nbGoodNumber < 0 && nbGoodNumber > nbCase){
+                nbGoodNumberComputer = scProposition.nextInt();
+                if(nbGoodNumberComputer < 0 && nbGoodNumberComputer > nbCase){
                     System.out.println("Veuillez fournir le nombre de chiffre correcte");
                 }
             } catch(Exception e){
                 System.out.println("Veuillez fournir le nombre de chiffre correcte");
             }
-        }while(nbGoodNumber < 0 && nbGoodNumber > nbCase);
+        }while(nbGoodNumberComputer < 0 && nbGoodNumberComputer > nbCase);
 
-        return nbGoodNumber;
+        return nbGoodNumberComputer;
     }
 
 
@@ -178,8 +179,6 @@ public class Mastermind extends Game{
      * @return list computer combinaison
      */
     public int[] propositionOfTheComputer(int computerCombinaison[], int nbGoodCase, int nbGoodNumber) {
-        Random random = new Random();
-        int combinaison = 0;
         int[] newCombinaison = new int[nbCase];
 
         if(winCombinaison.size() == nbCase || nbGoodNumber == nbCase){
