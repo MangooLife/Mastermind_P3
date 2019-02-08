@@ -1,10 +1,8 @@
 package main.java;
 
-import main.java.resources.PropertyManager;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -14,7 +12,6 @@ public class SearchPlusMinusTest {
     SearchPlusMinus game = new SearchPlusMinus();
     private PropertyManager propertyManager = new PropertyManager();
     private int nbCase = propertyManager.getNbCase();
-    final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Test
     public void Given_ResponseCombinaison_When_ResponseOfThePlayer_Then_ReturnResponseCombinaison(){
@@ -29,9 +26,11 @@ public class SearchPlusMinusTest {
 
     @Test
     public void Given_ComputerCombinaison_When_PropositionOfTheComputer_Then_ReturnComputerCombinaison(){
-        String responseCombinaison[] = {"=", "=", "=", "+"};
-        int computerCombinaison[] = {6, 0, 0, 0};
-        assertEquals(nbCase, game.propositionOfTheComputer(computerCombinaison, responseCombinaison).length);
+        if(nbCase==4){
+            String responseCombinaison[] = {"=", "=", "=", "+"};
+            int computerCombinaison[] = {6, 0, 0, 0};
+            assertEquals(nbCase, game.propositionOfTheComputer(computerCombinaison, responseCombinaison).length);
+        }
     }
 
     @Test

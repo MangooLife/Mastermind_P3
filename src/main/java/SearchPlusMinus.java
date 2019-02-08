@@ -1,5 +1,7 @@
 package main.java;
 
+import org.apache.logging.log4j.Level;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -100,6 +102,7 @@ public class SearchPlusMinus extends Game{
                     System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
                 }
             } catch(Exception e){
+                LOGGER.log(Level.WARN, "propositionOfThePlayer() - Veuillez fournir un code à "+nbCase+" chiffres");
                 System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
             }
         }while(number.length()!=nbCase);
@@ -127,6 +130,7 @@ public class SearchPlusMinus extends Game{
                     System.out.println("Veuillez fournir une suite de "+nbCase+" +, - ou =");
                 }
             } catch(Exception e){
+                LOGGER.log(Level.WARN, "responseOfThePlayer() - Veuillez fournir une suite de "+nbCase+" +, - ou =");
                 System.out.println("Veuillez fournir une suite de "+nbCase+" +, - ou =");
             }
         }while(response.length()!= nbCase && (response != "=" || response != "+" || response != "-"));

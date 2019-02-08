@@ -1,6 +1,5 @@
 package main.java;
 
-import main.java.resources.PropertyManager;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;

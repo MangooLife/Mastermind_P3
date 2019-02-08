@@ -1,13 +1,14 @@
 package main.java;
 
-import main.java.resources.PropertyManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import java.util.*;
+import java.util.Random;
 
 public abstract class Game {
 
-
     private PropertyManager propertyManager = new PropertyManager();
+    protected static  Logger LOGGER = LogManager.getLogger(Game.class);
     protected int nbLife = propertyManager.getNbLife();
     protected int isDeveloperMode = propertyManager.getIsDeveloperMode();
     protected int nbCase = propertyManager.getNbCase();

@@ -1,8 +1,15 @@
 package main.java;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Scanner;
 
+import static org.apache.logging.log4j.Level.WARN;
+
 public class GameMenu {
+
+    private static final Logger LOGGER = LogManager.getLogger(Game.class);
 
     /**
      * <b>Method void start :</b> init a game with startGame method with two int parameters : game option (1 or 2)
@@ -10,6 +17,7 @@ public class GameMenu {
      * respectively.
      */
     public void start() {
+        LOGGER.info("Start game");
         int game = choiceAGame();
         int method = choiceGameMode();
         startAGame(game, method);
@@ -34,6 +42,7 @@ public class GameMenu {
                     System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
                 }
             } catch (Exception e) {
+                LOGGER.log(WARN, "choiceAGame() - L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
                 System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
             }
         } while (gameChoice != 1 && gameChoice != 2);
@@ -60,6 +69,7 @@ public class GameMenu {
                     System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
                 }
             } catch (Exception e) {
+                LOGGER.log(WARN, "choiceGameMode() - L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
                 System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
             }
         } while (gameMethodChoice != 1 && gameMethodChoice != 2 && gameMethodChoice != 3);
@@ -111,6 +121,7 @@ public class GameMenu {
                     System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
                 }
             } catch (Exception e) {
+                LOGGER.log(WARN, "endingMenu() - L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
                 System.out.println("L'entrée n'est pas valide. Veuillez taper une entrée existante. Merci.");
             }
         } while (endingMenuChoice != 1 && endingMenuChoice != 2 && endingMenuChoice != 3);

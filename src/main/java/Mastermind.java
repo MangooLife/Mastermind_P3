@@ -1,14 +1,21 @@
 package main.java;
 
+import org.apache.logging.log4j.Level;
+
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Mastermind extends Game{
+    private List<Integer> numbersWhoseNotInTheCombinaison = new ArrayList<Integer>();
+    private List<Integer> winCombinaison = new ArrayList<Integer>();
     private String responseCombinaison[] = new String[nbCase];
-    private int playerResponse;
     private int computerCombinaison[] = generateACombi();
+    private int lastCombinaison[] = new int[nbCase];
+    private int playerResponse;
     private int nbGoodNumber, nbGoodCase;
     private int nbGoodNumberComputer, nbGoodCaseComputer;
+    private int combinaison = 0;
+    private int previousNbGoodCase, previousNbGoodNumber = 0;
     private boolean computerWinGame = false;
 
     @Override
@@ -88,6 +95,7 @@ public class Mastermind extends Game{
                     System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
                 }
             } catch(Exception e){
+                LOGGER.log(Level.WARN, "propositionOfThePlayer() - Veuillez fournir un code à "+nbCase+" chiffres");
                 System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
             }
         }while(number.length()!=nbCase);
@@ -112,7 +120,6 @@ public class Mastermind extends Game{
         System.out.println(nbGoodNumberComputer+" présent, "+ nbGoodCaseComputer +" bien placé");
         if(nbGoodCaseComputer == nbCase){
             computerWinGame = true;
-            System.out.println("win");
         } else {
             computerCombinaison = propositionOfTheComputer(computerCombinaison, nbGoodCaseComputer, nbGoodNumberComputer);
             nbLife--;
@@ -134,6 +141,7 @@ public class Mastermind extends Game{
                     System.out.println("Veuillez fournir le nombre de case correcte");
                 }
             } catch (Exception e) {
+                LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodCase() - Veuillez fournir le nombre de case correcte");
                 System.out.println("Veuillez fournir le nombre de case correcte");
             }
         } while (nbGoodCaseComputer < 0 && nbGoodCaseComputer > nbCase);
@@ -155,21 +163,13 @@ public class Mastermind extends Game{
                     System.out.println("Veuillez fournir le nombre de chiffre correcte");
                 }
             } catch(Exception e){
+                LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodNumber() - Veuillez fournir le nombre de chiffre correcte");
                 System.out.println("Veuillez fournir le nombre de chiffre correcte");
             }
         }while(nbGoodNumberComputer < 0 && nbGoodNumberComputer > nbCase);
 
         return nbGoodNumberComputer;
     }
-
-
-    private List<Integer> numbersWhoseNotInTheCombinaison = new ArrayList<Integer>();
-    private int lastCombinaison[] = new int[nbCase];
-    private List<int[]> game = new ArrayList<int[]>();
-    private int combinaison = 0;
-    private int previousNbGoodCase, previousNbGoodNumber = 0;
-    private List<Integer> winCombinaison = new ArrayList<Integer>();
-
 
     /**
      * <b>Method propositionOfTheComputer :</b>
@@ -231,12 +231,10 @@ public class Mastermind extends Game{
 
     static void shuffleArray(int[] ar)
     {
-        // If running on Java 6 or older, use `new Random()` on RHS here
         Random rnd = ThreadLocalRandom.current();
         for (int i = ar.length - 1; i > 0; i--)
         {
             int index = rnd.nextInt(i + 1);
-            // Simple swap
             int a = ar[index];
             ar[index] = ar[i];
             ar[i] = a;

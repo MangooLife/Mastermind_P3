@@ -1,4 +1,4 @@
-package main.java.resources;
+package main.java;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class PropertyManager {
     private Properties properties;
-    private final String propertyFilePath = "src/main/java/resources/config.properties";
+    private final String propertyFilePath = "src/main/resources/config.properties";
 
     public PropertyManager(){
         BufferedReader reader;
