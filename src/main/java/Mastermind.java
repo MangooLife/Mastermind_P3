@@ -17,6 +17,8 @@ public class Mastermind extends Game{
     private int combinaison = 0;
     private int previousNbGoodCase, previousNbGoodNumber = 0;
     private boolean computerWinGame = false;
+    private String regexNumber = "[0-9]";
+    private String regexLetter = "[^a-zA-Z]";
 
     @Override
     public void playerGuessTheSecret() {
@@ -38,7 +40,7 @@ public class Mastermind extends Game{
     public void computerVsPlayer() {
         int nbLifeCvsP = nbLife * 2;
         do{
-            if(computerWinGame==false){
+            if(!computerWinGame){
                 System.out.println("Joueur devine la combinaison de l'ordinateur : ");
                 displayPlayerGuessTheSecret();
             }
@@ -131,20 +133,24 @@ public class Mastermind extends Game{
      * @return nbGoodCase
      */
     public int responseOfThePlayerAskGoodCase() {
-        System.out.print("Combien de chiffre bien placés ? ");
         nbGoodCaseComputer = 0;
+        String testNbGoodCaseComputer = "0";
         do {
+            System.out.print("Combien de chiffre bien placés ? ");
             try {
                 Scanner scProposition = new Scanner(System.in);
                 nbGoodCaseComputer = scProposition.nextInt();
-                if (nbGoodCaseComputer < 0 && nbGoodCaseComputer > nbCase) {
-                    System.out.println("Veuillez fournir le nombre de case correcte");
+                testNbGoodCaseComputer = Integer.toString(nbGoodCaseComputer);
+                System.out.println(nbGoodCaseComputer);
+                if (!testNbGoodCaseComputer.matches(regexNumber) && !testNbGoodCaseComputer.matches(regexLetter) && nbGoodCaseComputer > nbCase) {
+                    LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodCase() - Veuillez fournir le nombre de chiffre bien placés");
+                    System.out.println("Veuillez fournir le nombre de chiffre bien placés");
                 }
             } catch (Exception e) {
-                LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodCase() - Veuillez fournir le nombre de case correcte");
-                System.out.println("Veuillez fournir le nombre de case correcte");
+                LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodCase() - Veuillez fournir le nombre chiffre bien placés");
+                System.out.println("Veuillez fournir le nombre de chiffre bien placés");
             }
-        } while (nbGoodCaseComputer < 0 && nbGoodCaseComputer > nbCase);
+        } while (!testNbGoodCaseComputer.matches(regexNumber) && !testNbGoodCaseComputer.matches(regexLetter) && nbGoodCaseComputer > nbCase);
         return nbGoodCaseComputer;
     }
 
@@ -153,20 +159,23 @@ public class Mastermind extends Game{
      * @return nbGoodNumber
      */
     public int responseOfThePlayerAskGoodNumber() {
-        System.out.print("Combien de chiffre correctes ? ");
         nbGoodNumber = 0;
+        String testNbGoodNumber = "0";
         do{
+            System.out.print("Combien de chiffre correctes ? ");
             try{
                 Scanner scProposition = new Scanner(System.in);
                 nbGoodNumberComputer = scProposition.nextInt();
-                if(nbGoodNumberComputer < 0 && nbGoodNumberComputer > nbCase){
+                testNbGoodNumber = Integer.toString(nbGoodNumberComputer);
+                if(!testNbGoodNumber.matches(regexNumber) && !testNbGoodNumber.matches(regexLetter) && nbGoodNumberComputer > nbCase){
+                    LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodNumber() - Veuillez fournir le nombre de chiffre correcte");
                     System.out.println("Veuillez fournir le nombre de chiffre correcte");
                 }
             } catch(Exception e){
                 LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodNumber() - Veuillez fournir le nombre de chiffre correcte");
                 System.out.println("Veuillez fournir le nombre de chiffre correcte");
             }
-        }while(nbGoodNumberComputer < 0 && nbGoodNumberComputer > nbCase);
+        }while(!testNbGoodNumber.matches(regexNumber) && !testNbGoodNumber.matches(regexLetter) && nbGoodNumberComputer > nbCase);
 
         return nbGoodNumberComputer;
     }
