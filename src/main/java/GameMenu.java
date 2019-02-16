@@ -28,7 +28,7 @@ public class GameMenu {
      * @return (int) game chosen by the Player (1: Recherche +/- or 2: Mastermind)
      */
     public int choiceAGame() {
-        System.out.println("Bienvenue sur Mastermind !");
+        System.out.println("Bienvenue !");
         System.out.println("Choisissez un jeu :");
         System.out.println("1. Recherche +/-");
         System.out.println("2. Mastermind");

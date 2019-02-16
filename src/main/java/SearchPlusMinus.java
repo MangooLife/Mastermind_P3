@@ -32,7 +32,7 @@ public class SearchPlusMinus extends Game{
     public void computerVsPlayer() {
         int nbLifeCvsP = nbLife * 2;
         do{
-            if(computerWinGame==false){
+            if(!computerWinGame){
                 System.out.println("Joueur devine la combinaison de l'ordinateur : ");
                 displayPlayerGuessTheSecret();
             }
@@ -92,24 +92,25 @@ public class SearchPlusMinus extends Game{
      * @return guessCombinaison : code guessed by the player
      */
     public int[] propositionOfThePlayer(){
-        System.out.print("Veuillez taper une suite de "+nbCase+" chiffres entre 0 et 9: ");
-        String number = "";
+        String numberS = "";
         do{
+            System.out.print("Veuillez taper une suite de "+nbCase+" chiffres entre 0 et 9: ");
             try{
                 Scanner scProposition = new Scanner(System.in);
-                number = scProposition.nextLine();
-                if(number.length() != nbCase){
-                    System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
-                }
+                numberS = scProposition.nextLine();
+                if(numberS.length() != nbCase && !numberS.matches("-?\\d+")){ System.out.println("Veuillez fournir un code à "+nbCase+" chiffres"); }
             } catch(Exception e){
                 LOGGER.log(Level.WARN, "propositionOfThePlayer() - Veuillez fournir un code à "+nbCase+" chiffres");
                 System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
             }
-        }while(number.length()!=nbCase);
+        }while(numberS.length()!=nbCase && !numberS.matches("-?\\d+"));
 
-        for(int i=0; i<number.length(); i++){
-            guessCombinaison[i] = Integer.valueOf(String.valueOf(number.charAt(i)));
+        if(numberS.length()==nbCase && numberS.matches("-?\\d+")) {
+            for(int i=0; i<numberS.length(); i++){
+                guessCombinaison[i] = Integer.valueOf(String.valueOf(numberS.charAt(i)));
+            }
         }
+
         System.out.print("Proposition : ");
         showValueOfTab(guessCombinaison);
         return guessCombinaison;
@@ -126,14 +127,14 @@ public class SearchPlusMinus extends Game{
             try{
                 Scanner scProposition = new Scanner(System.in);
                 response = scProposition.nextLine();
-                if(response.length() != nbCase && (response != "=" || response != "+" || response != "-")){
+                if(response.length() != nbCase){
                     System.out.println("Veuillez fournir une suite de "+nbCase+" +, - ou =");
                 }
             } catch(Exception e){
                 LOGGER.log(Level.WARN, "responseOfThePlayer() - Veuillez fournir une suite de "+nbCase+" +, - ou =");
                 System.out.println("Veuillez fournir une suite de "+nbCase+" +, - ou =");
             }
-        }while(response.length()!= nbCase && (response != "=" || response != "+" || response != "-"));
+        }while(response.length()!= nbCase);
         for(int i=0; i<response.length(); i++){
             responseCombinaison[i] = String.valueOf(response.charAt(i));
         }
@@ -152,10 +153,12 @@ public class SearchPlusMinus extends Game{
         int combinaison = 0;
         for(int i=0; i<nbCase; i++){
             if(playerResponse[i].equals("+")){
-                combinaison = random.nextInt(((9 + 1 - (computerFirstCombinaison[i]+1))+(computerFirstCombinaison[i]+1)));
+                if(computerFirstCombinaison[i] == 9){ combinaison = 0; }
+                else { combinaison = random.nextInt(((9 - (computerFirstCombinaison[i]+1))+(computerFirstCombinaison[i]+1))); }
                 computerCombinaison[i] = combinaison;
             } else if(playerResponse[i].equals("-")){
-                combinaison = random.nextInt((computerFirstCombinaison[i]-1));
+                if(computerFirstCombinaison[i] == 0){ combinaison = 1; }
+                else { combinaison  = random.nextInt((computerFirstCombinaison[i])); }
                 computerCombinaison[i] = combinaison;
             } else {
                 computerCombinaison[i] = computerFirstCombinaison[i];
@@ -165,10 +168,10 @@ public class SearchPlusMinus extends Game{
     }
 
     public String onlyNbCaseEqual(){
-        String nbCaseEqual = "";
+        StringBuilder nbCaseEqual = new StringBuilder();
         for(int i = 0; i < nbCase; i++){
-            nbCaseEqual += "=";
+            nbCaseEqual.append("=");
         }
-        return nbCaseEqual;
+        return nbCaseEqual.toString();
     }
 }
