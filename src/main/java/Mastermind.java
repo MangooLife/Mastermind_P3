@@ -6,16 +6,12 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Mastermind extends Game{
-    private List<Integer> numbersWhoseNotInTheCombinaison = new ArrayList<Integer>();
     private List<Integer> winCombinaison = new ArrayList<Integer>();
-    private String responseCombinaison[] = new String[nbCase];
     private int computerCombinaison[] = generateACombi();
     private int lastCombinaison[] = new int[nbCase];
-    private int playerResponse;
     private int nbGoodNumber, nbGoodCase;
     private int nbGoodNumberComputer, nbGoodCaseComputer;
     private int combinaison = 0;
-    private int previousNbGoodCase, previousNbGoodNumber = 0;
     private boolean computerWinGame = false;
     private String regexNumber = "[0-9]";
     private String regexLetter = "[^a-zA-Z]";
@@ -145,7 +141,7 @@ public class Mastermind extends Game{
                 Scanner scProposition = new Scanner(System.in);
                 testNbGoodCaseComputer = scProposition.nextLine();
                 nbGoodCaseComputer = Integer.parseInt(testNbGoodCaseComputer);
-                if (!testNbGoodCaseComputer.matches(regexNumber) && !testNbGoodCaseComputer.matches(regexLetter) && !(nbGoodNumberComputer > nbCase)) {
+                if (!testNbGoodCaseComputer.matches(regexNumber) && !testNbGoodCaseComputer.matches(regexLetter) || nbGoodCaseComputer > nbCase) {
                     LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodCase() - Veuillez fournir le nombre de chiffre bien placés");
                     System.out.println("Veuillez fournir le nombre de chiffre bien placés");
                 }
@@ -153,7 +149,7 @@ public class Mastermind extends Game{
                 LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodCase() - Veuillez fournir le nombre chiffre bien placés");
                 System.out.println("Veuillez fournir le nombre de chiffre bien placés");
             }
-        } while (!testNbGoodCaseComputer.matches(regexNumber) && !testNbGoodCaseComputer.matches(regexLetter)  && !(nbGoodNumberComputer > nbCase));
+        } while (!testNbGoodCaseComputer.matches(regexNumber) && !testNbGoodCaseComputer.matches(regexLetter)  || nbGoodCaseComputer > nbCase);
         return nbGoodCaseComputer;
     }
 
@@ -170,7 +166,7 @@ public class Mastermind extends Game{
                 Scanner scProposition = new Scanner(System.in);
                 testNbGoodNumber = scProposition.nextLine();
                 nbGoodNumberComputer = Integer.parseInt(testNbGoodNumber);
-                if(!testNbGoodNumber.matches(regexNumber) && !testNbGoodNumber.matches(regexLetter) && !(nbGoodNumberComputer > nbCase)){
+                if(!testNbGoodNumber.matches(regexNumber) && !testNbGoodNumber.matches(regexLetter) || nbGoodNumberComputer > nbCase){
                     LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodNumber() - Veuillez fournir le nombre de chiffre correcte");
                     System.out.println("Veuillez fournir le nombre de chiffre correcte");
                 }
@@ -178,12 +174,11 @@ public class Mastermind extends Game{
                 LOGGER.log(Level.WARN, "responseOfThePlayerAskGoodNumber() - Veuillez fournir le nombre de chiffre correcte");
                 System.out.println("Veuillez fournir le nombre de chiffre correcte");
             }
-        }while(!testNbGoodNumber.matches(regexNumber) && !testNbGoodNumber.matches(regexLetter) && !(nbGoodNumberComputer > nbCase));
+        }while(!testNbGoodNumber.matches(regexNumber) && !testNbGoodNumber.matches(regexLetter) || nbGoodNumberComputer > nbCase);
 
         return nbGoodNumberComputer;
     }
-    List<String> allPrecedentCombinaison = new ArrayList<String>();
-    String newCombi;
+
     /**
      * <b>Method propositionOfTheComputer :</b>
      * @param computerCombinaison
@@ -193,24 +188,35 @@ public class Mastermind extends Game{
      */
     public int[] propositionOfTheComputer(int computerCombinaison[], int nbGoodCase, int nbGoodNumber) {
         int[] newCombinaison = new int[nbCase];
-        if(winCombinaison.size() == nbCase || nbGoodNumber == nbCase){
+        if(winCombinaison.size() == nbCase && nbGoodNumber == nbCase){
             newCombinaison = findRightCombi(newCombinaison);
         } else if (nbGoodCase > 0){
             for(int i = 0; i<nbGoodCase; i++){
                 winCombinaison.add(computerCombinaison[i]);
-                System.out.print(winCombinaison);
             }
             if(winCombinaison.size() == nbCase){
                 newCombinaison = findRightCombi(newCombinaison);
             } else {
                 newCombinaison = newCombinaison(newCombinaison);
             }
-        } else if (nbGoodNumber == 0 && nbGoodCase == 0 || nbGoodNumber == previousNbGoodNumber) {
-            newCombinaison = newCombinaison(newCombinaison);
+            System.out.println(winCombinaison);
+        } else if (nbGoodNumber == 0 && nbGoodCase == 0) {
+            System.out.println(winCombinaison);
+            if(winCombinaison.size() == nbCase){
+                winCombinaison.clear();
+                newCombinaison = generateACombi();
+            } else {
+                newCombinaison = newCombinaison(newCombinaison);
+            }
         }
         return newCombinaison;
     }
 
+    /**
+     * <b>Method findRightCombi :</b>
+     * @param newCombinaison
+     * @return a shuffle combinaison with right numbers
+     */
     private int[] findRightCombi(int[] newCombinaison){
         for(int i = 0; i < nbCase; i++){
             lastCombinaison[i] = winCombinaison.get(i);
@@ -218,32 +224,31 @@ public class Mastermind extends Game{
         shuffleArray(lastCombinaison);
         for (int i = 0; i < nbCase; i++) {
             newCombinaison[i] = lastCombinaison[i];
-            winCombinaison.add(lastCombinaison[i]);
         }
         return newCombinaison;
     }
 
+    /**
+     * <b>Method newCombinaison :</b>
+     * @param combi
+     * @return a combinaison
+     */
     private int[] newCombinaison(int[] combi){
         for (int i = 0; i < nbCase; i++) {
-            numbersWhoseNotInTheCombinaison.add(computerCombinaison[i]);
-            do {
-                combinaison = computerCombinaison[i] + 1;
-            } while (numbersWhoseNotInTheCombinaison.contains(combinaison));
+            combinaison = computerCombinaison[i] + 1;
             if(combinaison < 10) {
                 combi[i] = combinaison;
             } else {
                 combi[i] = 0;
             }
         }
-        if (numbersWhoseNotInTheCombinaison.size() > 10) {
-            numbersWhoseNotInTheCombinaison.clear();
-        }
-        if (winCombinaison.size() > 5) {
-            winCombinaison.clear();
-        }
         return combi;
     }
 
+    /**
+     * newCombinaison
+     * @param ar array
+     */
     private void shuffleArray(int[] ar)
     {
         Random rnd = ThreadLocalRandom.current();
