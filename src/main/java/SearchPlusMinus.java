@@ -98,19 +98,22 @@ public class SearchPlusMinus extends Game{
             try{
                 Scanner scProposition = new Scanner(System.in);
                 numberS = scProposition.nextLine();
-                if(numberS.length() != nbCase && !numberS.matches("-?\\d+")){ System.out.println("Veuillez fournir un code à "+nbCase+" chiffres"); }
+                System.out.println(!numberS.matches(regexNumber) + " " +!numberS.matches(regexLetter));
+                if(!numberS.matches(regexNumber) && !numberS.matches(regexLetter) || numberS.length() != nbCase){
+                    LOGGER.log(Level.WARN, "propositionOfThePlayer() - Veuillez fournir un code à "+nbCase+" chiffres");
+                    System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
+                }
             } catch(Exception e){
                 LOGGER.log(Level.WARN, "propositionOfThePlayer() - Veuillez fournir un code à "+nbCase+" chiffres");
                 System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
             }
-        }while(numberS.length()!=nbCase && !numberS.matches("-?\\d+"));
+        }while(!numberS.matches(regexNumber) && !numberS.matches(regexLetter) || numberS.length() != nbCase);
 
-        if(numberS.length()==nbCase && numberS.matches("-?\\d+")) {
+        if(numberS.matches(regexNumber) && numberS.matches(regexLetter) || numberS.length() == nbCase) {
             for(int i=0; i<numberS.length(); i++){
                 guessCombinaison[i] = Integer.valueOf(String.valueOf(numberS.charAt(i)));
             }
         }
-
         System.out.print("Proposition : ");
         showValueOfTab(guessCombinaison);
         return guessCombinaison;
@@ -154,11 +157,12 @@ public class SearchPlusMinus extends Game{
         for(int i=0; i<nbCase; i++){
             if(playerResponse[i].equals("+")){
                 if(computerFirstCombinaison[i] == 9){ combinaison = 0; }
-                else { combinaison = random.nextInt(((9 - (computerFirstCombinaison[i]+1))+(computerFirstCombinaison[i]+1))); }
+                else { combinaison = random.nextInt((9 - (computerFirstCombinaison[i]-1)) + 1) + computerFirstCombinaison[i]; }
+                if(combinaison > 9){ combinaison = 9;}
                 computerCombinaison[i] = combinaison;
             } else if(playerResponse[i].equals("-")){
                 if(computerFirstCombinaison[i] == 0){ combinaison = 1; }
-                else { combinaison  = random.nextInt((computerFirstCombinaison[i])); }
+                else { combinaison  = random.nextInt(computerFirstCombinaison[i]-1); }
                 computerCombinaison[i] = combinaison;
             } else {
                 computerCombinaison[i] = computerFirstCombinaison[i];

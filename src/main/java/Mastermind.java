@@ -13,8 +13,6 @@ public class Mastermind extends Game{
     private int nbGoodNumberComputer, nbGoodCaseComputer;
     private int combinaison = 0;
     private boolean computerWinGame = false;
-    private String regexNumber = "[0-9]";
-    private String regexLetter = "[^a-zA-Z]";
 
     @Override
     public void playerGuessTheSecret() {

@@ -17,6 +17,8 @@ public abstract class Game {
     protected int guessCombinaison[] = new int[nbCase];
     protected int computerSecret[] = generateASecret();
     protected int rightNumber;
+    protected String regexNumber = "^[0-9]*$";
+    protected String regexLetter = "[^a-zA-Z]";
 
 
     /**
