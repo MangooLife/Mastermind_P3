@@ -98,7 +98,6 @@ public class SearchPlusMinus extends Game{
             try{
                 Scanner scProposition = new Scanner(System.in);
                 numberS = scProposition.nextLine();
-                System.out.println(!numberS.matches(regexNumber) + " " +!numberS.matches(regexLetter));
                 if(!numberS.matches(regexNumber) && !numberS.matches(regexLetter) || numberS.length() != nbCase){
                     LOGGER.log(Level.WARN, "propositionOfThePlayer() - Veuillez fournir un code à "+nbCase+" chiffres");
                     System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");

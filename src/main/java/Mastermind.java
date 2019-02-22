@@ -38,7 +38,6 @@ public class Mastermind extends Game{
                 System.out.println("Joueur devine la combinaison de l'ordinateur : ");
                 displayPlayerGuessTheSecret();
             }
-            System.out.println(computerWinGame + " " + nbGoodCase);
             if(nbGoodCase != nbCase){
                 System.out.println("L'ordinateur devine la combinaison du joueur : ");
                 displayComputerGuessTheSecret();
@@ -55,20 +54,23 @@ public class Mastermind extends Game{
     public void displayPlayerGuessTheSecret(){
         isDeveloperMode(); propositionOfThePlayer();
         nbGoodNumber = 0; nbGoodCase = 0 ;
-        List<Integer> noDouble = new ArrayList<Integer>();
+        boolean findIt[] = new boolean[nbCase];
         System.out.print(" -> Réponse : ");
         for(int i = 0; i < nbCase; i++) {
             if (guessCombinaison[i] == computerSecret[i]) {
                 nbGoodCase++;
-                noDouble.add(guessCombinaison[i]);
-                guessCombinaison[i] = -1;
+                findIt[i] = true;
+            } else {
+                findIt[i] = false;
             }
         }
         for(int i = 0; i < nbCase; i++){
-            for (int j = 0; j < nbCase && !noDouble.contains(guessCombinaison[i]) && guessCombinaison[i] != -1; j++) {
-                if (guessCombinaison[i] == computerSecret[j]) {
-                    nbGoodNumber++;
-                    guessCombinaison[i] = -1;
+            if(guessCombinaison[i] != computerSecret[i]){
+                for (int j = 0; j < nbCase; j++) {
+                    if (!findIt[j] && guessCombinaison[i] == computerSecret[j]) {
+                        nbGoodNumber++;
+                        findIt[j] = true;
+                    }
                 }
             }
         }
@@ -94,9 +96,6 @@ public class Mastermind extends Game{
                 LOGGER.log(Level.WARN, "propositionOfThePlayer() - Veuillez fournir un code à "+nbCase+" chiffres");
                 System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
             }
-            System.out.println(number.matches(regexLetter));
-            System.out.println(number.matches(regexNumber));
-            System.out.println(number.length() != nbCase);
         }while(number.length() != nbCase && !number.matches("-?\\d+"));
         if(number.length() == nbCase && number.matches("-?\\d+")){
             for(int i=0; i<number.length(); i++){
@@ -197,9 +196,7 @@ public class Mastermind extends Game{
             } else {
                 newCombinaison = newCombinaison(newCombinaison);
             }
-            System.out.println(winCombinaison);
         } else if (nbGoodNumber == 0 && nbGoodCase == 0) {
-            System.out.println(winCombinaison);
             if(winCombinaison.size() == nbCase){
                 winCombinaison.clear();
                 newCombinaison = generateACombi();
