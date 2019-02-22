@@ -8,34 +8,34 @@
 
 # Parameters
 
-You can parameter the number of life, the number of cases and set the developer mode.
+You can parameter the number of life, the number of cases and set the developer mode (1 if you want to test the game in developer mode).
 
 Go to src/main/resources/config/properties
 Here some example :
 
-```
-#Game Properties
-nbLife = 20
-nbCase = 4
-isDeveloperMode = 0
-```
+    ```
+    #Game Properties
+    nbLife = 20
+    nbCase = 4
+    isDeveloperMode = 0
+    ```
 
 # How to play
 1. Run Main class
 2. Choose your game
-```
-Choisissez un jeu :
-1. Recherche +/-
-2. Mastermind
-```
+    ```
+    Choisissez un jeu :
+    1. Recherche +/-
+    2. Mastermind
+    ```
 3. Choose your mode
 
-```
-Choisissez un mode de jeu :
-1. Mode challenger: devinez la combinaison secrète de l'ordinateur
-2. Mode défenseur: laissez l'ordinateur deviner votre comnbinaison secrète
-3. Mode duel: vous vs l'ordinateur. Le premier qui trouve la combinaison gagne
-```
+    ```
+    Choisissez un mode de jeu :
+    1. Mode challenger: devinez la combinaison secrète de l'ordinateur
+    2. Mode défenseur: laissez l'ordinateur deviner votre comnbinaison secrète
+    3. Mode duel: vous vs l'ordinateur. Le premier qui trouve la combinaison gagne
+    ```
 
 4. Recherche Plus ou Moins
     ```
@@ -81,8 +81,8 @@ Choisissez un mode de jeu :
     0 présent, 3 bien placé
     ```
 5. Quit the game
-```
-1. Rejouer à une partie
-2. Retour au menu des jeux
-3. Quitter Mastermind
-```
+    ```
+    1. Rejouer à une partie
+    2. Retour au menu des jeux
+    3. Quitter Mastermind
+    ```
