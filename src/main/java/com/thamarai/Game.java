@@ -1,4 +1,4 @@
-package main.java;
+package com.thamarai;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

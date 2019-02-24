@@ -1,10 +1,6 @@
 # Install
 
  - Clone or download the repository
- - (IntelliJ) Set modules : File > Project Structure... > Modules
-    - Sources : src file
-    - Resources : resources file
-    - Tests : test file
 
 # Parameters
 

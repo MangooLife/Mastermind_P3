@@ -1,4 +1,4 @@
-package main.java;
+package com.thamarai;
 
 import org.junit.jupiter.api.Test;
 

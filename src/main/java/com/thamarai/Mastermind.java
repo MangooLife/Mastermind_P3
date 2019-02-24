@@ -1,4 +1,4 @@
-package main.java;
+package com.thamarai;
 
 import org.apache.logging.log4j.Level;
 
@@ -185,7 +185,7 @@ public class Mastermind extends Game{
      */
     public int[] propositionOfTheComputer(int computerCombinaison[], int nbGoodCase, int nbGoodNumber) {
         int[] newCombinaison = new int[nbCase];
-        if(winCombinaison.size() == nbCase && nbGoodNumber == nbCase){
+        if(winCombinaison.size() == nbCase && nbGoodNumber == nbCase ||nbGoodNumber > 0 && nbGoodCase > 0){
             newCombinaison = findRightCombi(newCombinaison);
         } else if (nbGoodCase > 0){
             for(int i = 0; i<nbGoodCase; i++){

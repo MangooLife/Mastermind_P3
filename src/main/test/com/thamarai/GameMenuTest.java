@@ -1,4 +1,4 @@
-package main.java;
+package com.thamarai;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
-import java.io.PrintStream;
 
 import static org.apache.logging.log4j.Level.WARN;
 import static org.junit.jupiter.api.Assertions.assertEquals;
