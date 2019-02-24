@@ -185,8 +185,9 @@ public class Mastermind extends Game{
      */
     public int[] propositionOfTheComputer(int computerCombinaison[], int nbGoodCase, int nbGoodNumber) {
         int[] newCombinaison = new int[nbCase];
-        if(winCombinaison.size() == nbCase && nbGoodNumber == nbCase ||nbGoodNumber > 0 && nbGoodCase > 0){
-            newCombinaison = findRightCombi(newCombinaison);
+        if(winCombinaison.size() == nbCase && nbGoodNumber == nbCase || nbGoodNumber > 0 && nbGoodCase > 0){
+            if(winCombinaison.size() < nbCase){ newCombinaison = newCombinaison(newCombinaison); }
+            else { newCombinaison = findRightCombi(newCombinaison); }
         } else if (nbGoodCase > 0){
             for(int i = 0; i<nbGoodCase; i++){
                 winCombinaison.add(computerCombinaison[i]);
