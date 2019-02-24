@@ -7,7 +7,7 @@ import java.util.Random;
 
 public abstract class Game {
 
-    private main.java.PropertyManager propertyManager = new PropertyManager();
+    private PropertyManager propertyManager = new PropertyManager();
     protected static  Logger LOGGER = LogManager.getLogger(Game.class);
     protected int nbLife = propertyManager.getNbLife();
     protected int isDeveloperMode = propertyManager.getIsDeveloperMode();
