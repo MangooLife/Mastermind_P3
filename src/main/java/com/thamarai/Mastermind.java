@@ -89,15 +89,15 @@ public class Mastermind extends Game{
             try{
                 Scanner scProposition = new Scanner(System.in);
                 number = scProposition.nextLine();
-                if(number.length() != nbCase && !number.matches("-?\\d+")){
+                if(!number.matches(regexNumber) && !number.matches(regexLetter) || number.length() != nbCase){
                     System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
                 }
             } catch(Exception e){
                 LOGGER.log(Level.WARN, "propositionOfThePlayer() - Veuillez fournir un code à "+nbCase+" chiffres");
                 System.out.println("Veuillez fournir un code à "+nbCase+" chiffres");
             }
-        }while(number.length() != nbCase && !number.matches("-?\\d+"));
-        if(number.length() == nbCase && number.matches("-?\\d+")){
+        }while(!number.matches(regexNumber) && !number.matches(regexLetter) || number.length() != nbCase);
+        if(number.matches(regexNumber) && number.matches(regexLetter) || number.length() == nbCase){
             for(int i=0; i<number.length(); i++){
                 guessCombinaison[i] = Integer.valueOf(String.valueOf(number.charAt(i)));
             }
