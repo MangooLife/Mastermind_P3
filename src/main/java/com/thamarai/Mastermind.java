@@ -75,6 +75,7 @@ public class Mastermind extends Game{
             }
         }
         System.out.println(nbGoodNumber+" présent, "+ nbGoodCase +" bien placé");
+        System.out.println();
         nbLife--;
     }
 
@@ -123,6 +124,7 @@ public class Mastermind extends Game{
             computerCombinaison = propositionOfTheComputer(computerCombinaison, nbGoodCaseComputer, nbGoodNumberComputer);
             nbLife--;
         }
+        System.out.println();
     }
 
     /**

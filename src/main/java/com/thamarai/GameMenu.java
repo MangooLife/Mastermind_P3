@@ -110,7 +110,7 @@ public class GameMenu {
     public int endingMenu(){
         System.out.println("1. Rejouer à une partie");
         System.out.println("2. Retour au menu des jeux");
-        System.out.println("3. Quitter Mastermind");
+        System.out.println("3. Quitter le jeu");
 
         int endingMenuChoice = 0;
         do {
