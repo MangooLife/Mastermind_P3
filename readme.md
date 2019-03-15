@@ -1,6 +1,7 @@
 # Install
 
  - Clone or download the repository
+ - Do a mvn clean install before run the game
  - run the game (developer mode) : java -cp target/Mastermind_P3-1.0-SNAPSHOT.jar com.thamarai.Main developerMode
  - without developer mode : java -cp target/Mastermind_P3-1.0-SNAPSHOT.jar com.thamarai.Main
 
