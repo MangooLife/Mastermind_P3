@@ -1,10 +1,12 @@
 # Install
 
  - Clone or download the repository
+ - run the game (developer mode) : java -cp target/Mastermind_P3-1.0-SNAPSHOT.jar com.thamarai.Main developerMode
+ - without developer mode : java -cp target/Mastermind_P3-1.0-SNAPSHOT.jar com.thamarai.Main
 
 # Parameters
 
-You can parameter the number of life, the number of cases and set the developer mode (1 if you want to test the game in developer mode).
+You can parameter the number of life, the number of cases and (here too) set the developer mode (1 if you want to test the game in developer mode).
 
 Go to src/main/resources/config/properties
 Here some example :

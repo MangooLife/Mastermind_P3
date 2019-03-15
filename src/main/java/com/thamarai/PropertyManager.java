@@ -1,13 +1,12 @@
 package com.thamarai;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 
-import java.io.IOException;
 import java.util.Properties;
 
 public class PropertyManager {
     private Properties properties;
+    private OutputStream output = null;
     private final String propertyFilePath = "src/main/resources/config.properties";
 
     public PropertyManager(){
@@ -60,6 +59,28 @@ public class PropertyManager {
             return isDeveloperMode;
         } else {
             throw new RuntimeException("isDeveloperMode not specified in the config.properties");
+        }
+    }
+
+    /**
+     * <b>Method setIsDeveloperMode :</b> initialize the mode of the app
+     * @return  isDeveloperMode
+     */
+    public void setIsDeveloperMode(String newMode){
+        try {
+            output = new FileOutputStream("src/main/resources/config.properties");
+            properties.setProperty("isDeveloperMode", newMode);
+            properties.store(output, null);
+        } catch (IOException io) {
+            io.printStackTrace();
+        } finally {
+            if (output != null) {
+                try {
+                    output.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }
